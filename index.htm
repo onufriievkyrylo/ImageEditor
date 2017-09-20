@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="image-editor">
+    <div class="tools">
+      <div class="tool-group">
+        <input id="image" type="file" accept=".png, .jpg, .jpeg" name="image">
+        <label for="image">&#x254B; Open image</label>
+      </div>
+      <div class="tool-group">
+        <label for="width">Line width: </label>
+        <input id="width" type="number" size="3" min="1" value="1" name="width">
+      </div>
+      <div class="tool-group">
+        <label for="color">Line color: </label>
+        <input id="color" type="color" value="#05fcdb" name="color">
+      </div>
+      <div class="tool-group">
+          <div class="button" id="clear">X Clear</div>
+          <div class="button" id="undo">&larr; Undo</div>
+          <div class="button" id="redo">Redo &rarr;</div>
+      </div>
+
+    </div>
+    <div class="canvas">
+        <canvas id="canvas" width="700" height="500" ></canvas>
+    </div>
+  </div>
+  <script src="dist/bundle.js"></script>
+</body>
+
+</html>

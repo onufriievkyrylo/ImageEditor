@@ -1,0 +1,44 @@
+body, html {
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ input[type="file"] {
+   width: 0.1px;
+   height: 0.1px;
+   opacity: 0;
+   overflow: hidden;
+   position: absolute;
+   z-index: -1;
+ }
+ input[type="color"] {
+   outline: none;
+   border: none;
+   width: 5em;
+   height: 2em;
+   background: transparent;
+ }
+ input[type="color"]:hover {
+   cursor: pointer;
+ }
+ .button, input[type="file"] + label {
+   display: inline-block;
+   background: #236DDD; 
+   padding: .5em 1em;
+   color: whitesmoke;
+   margin-right: 1em;
+   border-radius: 3px;
+   transition: all ease-out 0.3s;
+ }
+ .button:hover, input[type="file"] + label:hover {
+   cursor: pointer;
+   background: #15458D; 
+ }
+ .tool-group {
+   margin-bottom: 1em; 
+ }
+ .canvas {
+   text-align: center;
+ }
+ .canvas #canvas {
+   cursor: crosshair;
+   border: solid black 1px;
+ }

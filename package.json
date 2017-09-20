@@ -1,0 +1,18 @@
+{
+  "name": "canvas",
+  "version": "0.0.1",
+  "description": "practice task for mobidev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyrylo Onufriiev",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2"
+  }
+}
